@@ -41,6 +41,7 @@
                                         <state key="selected" image="compose_button"/>
                                         <connections>
                                             <action selector="onComposeButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xAO-h2-Gmj"/>
+                                            <segue destination="Jdj-l6-fWd" kind="modal" identifier="composeSegue" id="kqt-uJ-PS5"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Nzo-Zc-N7L" userLabel="Account Button">
@@ -147,7 +148,7 @@
         <scene sceneID="m3I-zC-6fj">
             <objects>
                 <viewController storyboardIdentifier="ComposeViewController" id="Jdj-l6-fWd" customClass="ComposeViewController" customModule="tumbler2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" alpha="0.90000000000000002" contentMode="scaleToFill" id="siA-je-CDV">
+                    <view key="view" alpha="0.0" contentMode="scaleToFill" id="siA-je-CDV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -194,11 +195,24 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1VM-jL-gJ5">
-                                <rect key="frame" x="-1" y="434" width="320" height="53"/>
+                                <rect key="frame" x="0.0" y="515" width="320" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="nevermind">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onNevermind:" destination="Jdj-l6-fWd" eventType="touchUpInside" id="Cui-MY-cyv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6hj-6F-jZw">
+                                <rect key="frame" x="-1" y="509" width="320" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nevermind">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onNevermind:" destination="Jdj-l6-fWd" eventType="touchUpInside" id="Jdd-RN-8VT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.18823531270027161" green="0.26666668057441711" blue="0.364705890417099" alpha="1" colorSpace="deviceRGB"/>
