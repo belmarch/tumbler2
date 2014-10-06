@@ -1,7 +1,7 @@
-Tumbler
+Tumblr
 ========
 
-This is a demo of the Tumbler application.
+This is a demo of the Tumblr application.
 
 Time spent: 7 hours spent in total
 
